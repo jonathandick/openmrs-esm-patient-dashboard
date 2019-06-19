@@ -4,9 +4,13 @@ import Parcel from "single-spa-react/parcel";
 
 const patientDashboardParcels = [
   () => import("./basic-info/basic-info.parcel").then(m => m.default),
+<<<<<<< HEAD
   () => import("./recent-visits/recent-visits.parcel").then(m => m.default),
   () => import("../formentry/forms-parcel").then(m => m.default),
   () => System.import("@hackathon/relationships-widget")
+=======
+  () => System.import('@openmrs/jj-widget'),
+>>>>>>> Added vitals skeleton
 ];
 
 export default function DashboardWidgets(props: DashboardWidgetsProps) {
